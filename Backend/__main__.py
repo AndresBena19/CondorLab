@@ -23,20 +23,17 @@ mongoClient = pymongo.MongoClient(app.config['URI'])
 
 class CRUD(Resource):
     """
-    The class CRUD inherit from Resource that permit us to overwrite, some method like, GET, POST,PUT AND POST,
+    The class CRUD inherit from Resource that permit us to overwrite, some methods like, GET, POST,PUT AND POST,
     To build a API
-
     """
 
     def __init__(self):
         """
-
         here we initiate the connection with the database, and we capture the request in the global context
 
         Args:
             db : cursor of the database
             Data : json information
-
 
         """
         self.db = mongoClient['foundation-test1']
@@ -49,7 +46,7 @@ class CRUD(Resource):
 
         :return: A list containing all the serialized jsons from the database
         """
-        # Use list comprehension, to dumps all the json with ObjectID and other bson data type
+        # Use list comprehension, to dumps all the json with ObjectID and other bson objects
         Provider = [dumps(Prov) for Prov in self.db.providers.find()]
         return list(map(json.loads, Provider))
 
@@ -63,7 +60,7 @@ class CRUD(Resource):
             # Use dumps and load, to  convert some bson object, for the correct processing on the database
             self.db.providers.remove(loads(str(json.dumps(self.Data))))
         except bson.errors.InvalidId:
-            # Id  InvalidID error is triggered, it's mean that the value sanded, don't exist on the db
+            # Id  InvalidID error is triggered, it's mean that the value sended, don't exist on the db
             return jsonify({'Information': 'The value ' + str(self.Data) + ' dont exist on the db'})
         # If all run successfully
         return jsonify({'Message': 'The user have been deleted'})
@@ -92,7 +89,7 @@ class CRUD(Resource):
         """
         Here we just create a new provider, with the json data sended
 
-        :return:  A message indicating if the operation was successful or if an exception was triggered
+        :return:  A message indicating if the operation was successfull or if an exception was triggered
         """
         self.db.providers.insert(self.Data)
         # If all run successfully
