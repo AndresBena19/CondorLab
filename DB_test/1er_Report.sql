@@ -5,13 +5,12 @@ SELECT COUNT(R.cd_role_type)
 FROM user_profile P
 INNER JOIN user_role R
 ON
-P.id_user = R.id_user 
+P.id_user = R.id_user AND R.in_status = 1
 WHERE P.nm_middle IS NULL AND R.cd_role_type = RR.cd_role_type
 ) as No_Middle_Name
 FROM user_role RR
 GROUP BY RR.cd_role_type, RR.in_status
 HAVING RR.in_status = 1 
-
 
 
 
