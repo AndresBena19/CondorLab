@@ -4,7 +4,6 @@ from Config import DBconfig
 
 import json
 import pymongo
-
 import bson.errors
 from bson.json_util import dumps, loads
 
