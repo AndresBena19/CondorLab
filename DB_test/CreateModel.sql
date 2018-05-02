@@ -1,12 +1,8 @@
 
 -- Create Database --
-
 CREATE DATABASE CondorLab;
-
-
-
+-- Using the condor lab database
 USE condorlab;
-
 
 -- Create Tables ----
 
@@ -22,7 +18,6 @@ PRIMARY KEY (id_user)
 
 );
 
-
 -- Creating the User role table  --
 
 CREATE TABLE User_role
@@ -34,7 +29,6 @@ in_status INTEGER NOT NULL,
 
 PRIMARY KEY (id_user, cd_role_type,id_entity)
 );
-
 
 -- Creating the User address table  --
 
@@ -48,10 +42,9 @@ PRIMARY KEY (id_address)
 
 
 -- Adding the foreing key for relationships  --
+
 ALTER TABLE User_role ADD CONSTRAINT FK_id_user FOREIGN KEY (id_user) REFERENCES User_Profile (id_user);
 ALTER TABLE User_address ADD CONSTRAINT FKN_id_user FOREIGN KEY (id_user) REFERENCES User_Profile (id_user); 
-
-
 
 -- Insertir the values on User Profile --
 
@@ -68,7 +61,6 @@ INSERT INTO user_profile (nm_first,nm_last)VALUES("Esteban","Leal");
 INSERT INTO user_profile (nm_first,nm_last)VALUES("Kevin","Rueda");
 INSERT INTO user_profile (nm_first,nm_last)VALUES("Manolo","Gonzales");
 
-
 -- Insertir the values on User role --
 
 INSERT INTO user_role (id_user,cd_role_type,id_entity,in_status)VALUES(1,"Licensee",4221,1);
@@ -83,7 +75,6 @@ INSERT INTO user_role (id_user,cd_role_type,id_entity,in_status)VALUES(9,"Licens
 INSERT INTO user_role (id_user,cd_role_type,id_entity,in_status)VALUES(10,"Limited",4321,1);
 INSERT INTO user_role (id_user,cd_role_type,id_entity,in_status)VALUES(11,"Limited",4311,0);
 INSERT INTO user_role (id_user,cd_role_type,id_entity,in_status)VALUES(12,"Provider",4321,1);
-
 
 -- Insertir the values on User address --
 
