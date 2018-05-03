@@ -36,51 +36,88 @@ class CRUD(Resource):
 
         """
         self.db = mongoClient['foundation-test1']
-        if request.method != 'GET':
+        if not request.method in ['GET', 'DELETE']:
             self.Data = request.get_json()
 
-    def get(self):
+    def get(self, Key=None):
         """
         Here we consult all the existing collections in the database
 
         :return: A list containing all the serialized jsons from the database
         """
-        # Use list comprehension, to dumps all the json with ObjectID and other bson objects
-        Provider = [dumps(Prov) for Prov in self.db.providers.find()]
+
+        # In the case that the Key is empty, that mean that we have return all the records
+        if Key is None:
+            Provider = [dumps(Prov) for Prov in self.db.providers.find()]
+        else:
+
+            '''
+                We verify if the path contain in his second pisition have Object id, that means
+                that the user what to get a record where his index is a object id string
+            '''
+
+            # Use list comprehension, to dumps all the json with ObjectID and other bson objects
+
+            if request.path.split('/')[2] == 'ObjectId':
+                ID = {'$oid': eval(Key)}
+
+                Provider = [dumps(Prov) for Prov in self.db.providers.find({"_id": loads(str(json.dumps(ID)))})]
+            else:
+                # If the id is  a normal string, just loads the variable and get the record
+                Provider = [dumps(Prov) for Prov in self.db.providers.find({"_id": loads(Key)})]
+            if not Provider:
+                return jsonify({'Information': 'The id ' + Key + ' dont exist on the db'})
+
         return list(map(json.loads, Provider))
 
-    def delete(self):
+    def delete(self, Key):
         """
         Here we delete some collection from the database, with some particular key
 
         :return: A message indicating if the operation was successful or if an exception was triggered
         """
         try:
-            # Use dumps and load, to  convert some bson object, for the correct processing on the database
-            self.db.providers.remove(loads(str(json.dumps(self.Data))))
+            '''
+              We verify if the path contain in his second pisition have Object id, that means
+              that the user what to delete a record where his index is a object id string
+             '''
+            if request.path.split('/')[3] == 'ObjectId':
+                ID = {'$oid': eval(Key)}
+                # Use dumps and load, to  convert some bson object, for the correct processing on the database
+                self.db.providers.remove(loads(str(json.dumps(ID))))
+            else:
+                # If the id is  a normal string, just loads the variable and delete  the record
+                self.db.providers.remove(loads(Key))
+
         except bson.errors.InvalidId:
             # Id  InvalidID error is triggered, it's mean that the value sended, don't exist on the db
             return jsonify({'Information': 'The value ' + str(self.Data) + ' dont exist on the db'})
         # If all run successfully
         return jsonify({'Message': 'The user have been deleted'})
 
-    def put(self):
+    def put(self, Key):
         """
         Here we update some collecion from the database, taken the _id as a search index
-
         :return: A message indicating if the operation was successful or if an exception was triggered
         """
+
         try:
-            # We use the _Id like the search index, we just pop from the dict, and just have the other information
-            Id = self.Data.pop('_id')
-            try:
-                self.db.providers.update({"_id": loads(str(json.dumps(Id)))}, {"$set": self.Data})
-            except bson.errors.InvalidId:
-                # Id  InvalidID error is triggered, it's mean that the value sanded, don't exist on the db
-                return jsonify({'Information': 'The id ' + Id + ' dont exist on the db'})
-        except KeyError:
-            # This is triggered whe  the user try to send, other key that is not _id
-            return jsonify({'Warning': 'The index must be the _id of the collection'})
+            '''
+                We verify if the path contain in his second pisition have Object id, that means
+                that the user what to update a record where his index is a object id string
+            '''
+            if request.path.split('/')[3] == 'ObjectId':
+                ID = {'$oid': eval(Key)}
+                print("ID", ID)
+                self.db.providers.update({"_id": loads(str(json.dumps(ID)))}, {"$set": self.Data})
+            else:
+                # If the id is  a normal string, just loads the variable and update  the record
+                self.db.providers.update({"_id": loads(Key)}, {"$set": self.Data})
+
+        except bson.errors.InvalidId:
+            # Id  InvalidID error is triggered, it's mean that the value sanded, don't exist on the db
+            return jsonify({'Information': 'The id ' + Key + ' dont exist on the db'})
+
         # If all run successfully
         return jsonify({'Message': 'The user have been update'})
 
@@ -90,13 +127,22 @@ class CRUD(Resource):
 
         :return:  A message indicating if the operation was successfull or if an exception was triggered
         """
-        self.db.providers.insert(self.Data)
+        try:
+            self.db.providers.insert(self.Data)
+        except pymongo.errors.DuplicateKeyError:
+            # If exist some record with the same _id the exception gonna raise, and the message gonna display
+            return jsonify({'Message': 'The _id  ' + self.Data['_id'] + ' already exist'})
+
         # If all run successfully
         return jsonify({'Message': 'The user have been created'})
 
 
 # Here we add the URL resource to the API object
-api.add_resource(CRUD, '/CRUD')
+api.add_resource(CRUD, '/Provider',
+                 '/Provider/<string:Key>', '/Provider/ObjectId/<string:Key>',
+                 '/Provider/Delete/<string:Key>', '/Provider/Delete/ObjectId/<string:Key>',
+                 '/Provider/Update/<string:Key>', '/Provider/Update/ObjectId/<string:Key>',
+                 '/Provider/Add')
 
 if __name__ == '__main__':
     """

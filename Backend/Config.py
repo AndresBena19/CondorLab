@@ -1,3 +1,3 @@
 class DBconfig():
-    URI = 'Connection'
+    URI = 'connection'
 
