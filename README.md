@@ -48,7 +48,7 @@ C:\user> pip install pymongo
 
    + When the dont exist on the database
    + When the _id already exist
-   + When a invalid id is sended to remove son record
+   + When a invalid id is sended to remove some record
     
 # Notes #
 
