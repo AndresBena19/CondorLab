@@ -15,12 +15,12 @@ C:\user> pip install pymongo
     * [Server]/Provider
           This gonna return all the record from the database
 
-    * /Provider/<Key>
+    * [server]//Provider/<Key>
           This gonna return just the record with the key(_id) signaled 
 	
-    * /Provider/ObjectId/<Key>
-          This gonna return just the record with the key(_id) signale,but the 
-	  _id on the database have to be a ObjectId
+    * [Server]/Provider/ObjectId/<Key>
+          This gonna return just the record with the key(_id) signaled
+	  but the _id on the database have to be a ObjectId
 
  > ####  PUT ####
     * [Server]/Provider/Update/ObjectId/<key>
