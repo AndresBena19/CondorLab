@@ -131,7 +131,7 @@ class CRUD(Resource):
             self.db.providers.insert(self.Data)
         except pymongo.errors.DuplicateKeyError:
             # If exist some record with the same _id the exception gonna raise, and the message gonna display
-            return jsonify({'Message': 'The _id  ' + self.Data['_id'] + ' already exist'})
+            return jsonify({'Message': 'The _id  ' + str(self.Data['_id']) + ' already exist'})
 
         # If all run successfully
         return jsonify({'Message': 'The user have been created'})
@@ -139,9 +139,9 @@ class CRUD(Resource):
 
 # Here we add the URL resource to the API object
 api.add_resource(CRUD, '/Provider',
-                 '/Provider/<string:Key>', '/Provider/ObjectId/<string:Key>',
-                 '/Provider/Delete/<string:Key>', '/Provider/Delete/ObjectId/<string:Key>',
-                 '/Provider/Update/<string:Key>', '/Provider/Update/ObjectId/<string:Key>',
+                 '/Provider/<Key>', '/Provider/ObjectId/<Key>',
+                 '/Provider/Delete/<Key>', '/Provider/Delete/ObjectId/<Key>',
+                 '/Provider/Update/<Key>', '/Provider/Update/ObjectId/<Key>',
                  '/Provider/Add')
 
 if __name__ == '__main__':
