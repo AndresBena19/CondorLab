@@ -10,6 +10,7 @@
 ```sh
 C:\user> pip install flask
 C:\user> pip install pymongo
+C:\user> pip install tavern
 ```
 
 # Routes #
