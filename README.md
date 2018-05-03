@@ -11,14 +11,14 @@ C:\user> pip install pymongo
 # Routes #
 
 
- >> ####  GET ####
+ > ####  GET ####
     * [Server]/Provider
           This gonna return all the record from the database
 
     * /Provider/<Key>
           This gonna return just the record with the key(_id) signaled 
 
- >> ####  PUT ####
+ > ####  PUT ####
     * [Server]/Provider/Update/ObjectId/<key>
     
          This route gonna update  the record with the key(_id) signaled but 
@@ -28,7 +28,7 @@ C:\user> pip install pymongo
     
          This gonna update  the record  with the key(_id) signaled
     
->> #### DELETE ####
+> #### DELETE ####
        *[Server]/Provider/Delete/<Key>
         
              This route gonna delete the record with the key(_id) signaled
@@ -38,7 +38,7 @@ C:\user> pip install pymongo
             This route gonna delete the record with the key(_id) signaled, but this 
             _id have to be ObjectID on the database
             
->> #### POST ####
+> #### POST ####
         *[Server]/Provider/Add
         
             This route gonna create a nuew record on the database
@@ -46,9 +46,9 @@ C:\user> pip install pymongo
             
 # Exception manage
 
-    + When the dont exist on the database
-    + When the _id already exist
-    + When a invalid id is sended to remove son record
+   + When the dont exist on the database
+   + When the _id already exist
+   + When a invalid id is sended to remove son record
     
 # Notes #
 
