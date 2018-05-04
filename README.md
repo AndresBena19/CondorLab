@@ -17,38 +17,38 @@ C:\user> pip install tavern
 
 
  ####  GET ####
-    * [Server]/Provider
+    * https://[Server]/Provider
           This gonna return all the record from the database
 
-    * [server]//Provider/<Key>
+    * https://[server]//Provider/<Key>
           This gonna return just the record with the key(_id) signaled 
 	
-    * [Server]/Provider/ObjectId/<Key>
+    * https://[Server]/Provider/ObjectId/<Key>
           This gonna return just the record with the key(_id) signaled
 	      but the _id on the database have to be a ObjectId
 
  ####  PUT ####
-    * [Server]/Provider/Update/ObjectId/<key>
+    * https://[Server]/Provider/Update/ObjectId/<key>
     
          This route gonna update  the record with the key(_id) signaled but 
          this _id have to be ObjectId Object on the database
 
-    * [Server]/Provider/Update/<Key>
+    * https://[Server]/Provider/Update/<Key>
     
          This gonna update  the record  with the key(_id) signaled
     
  #### DELETE ####
-       *[Server]/Provider/Delete/<Key>
+       *https://[Server]/Provider/Delete/<Key>
         
              This route gonna delete the record with the key(_id) signaled
              
-       *[Server]/Provider/Delete/ObjectId/<Key>
+       *https://[Server]/Provider/Delete/ObjectId/<Key>
         
             This route gonna delete the record with the key(_id) signaled, but this 
             _id have to be ObjectID on the database
             
 #### POST ####
-        *[Server]/Provider/Add
+        *https://[Server]/Provider/Add
         
             This route gonna create a nuew record on the database
             
