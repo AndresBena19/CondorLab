@@ -5,7 +5,7 @@ stages:
 
  - name: Make sure that the user is created
    request:
-     url: http://127.0.0.1:4444/Provider/Add
+     url: https://127.0.0.1:4444/Provider/Add
      json:
        "_id": "Pruebatest15"
        "firstName": "Andres"
@@ -25,6 +25,8 @@ stages:
      headers:
        content-type: application/json
 
+     verify : false
+
 
    response:
      status_code: 201
@@ -34,15 +36,17 @@ stages:
 
  - name: Make sure that the previous record was created and we can get that information
    request:
-        url: http://127.0.0.1:4444/Provider/Update/"Pruebatest15"
+        url: https://127.0.0.1:4444/Provider/Update/"Pruebatest15"
         method: GET
+        verify : false
+
    response:
         status_code: 200
 
 
  - name: Make sure that the user is updated
    request:
-        url: http://127.0.0.1:4444/Provider/Update/"Pruebatest15"
+        url: https://127.0.0.1:4444/Provider/Update/"Pruebatest15"
 
         json:
           firstName: "NewAndres"
@@ -51,6 +55,8 @@ stages:
           email: "andresbenavides404@gmail.com.com"
 
         method: PUT
+        verify : false
+
         headers:
           content-type: application/json
 
@@ -63,8 +69,10 @@ stages:
 
  - name: Make sure that the user is deleted
    request:
-        url: http://127.0.0.1:4444/Provider/Delete/"Pruebatest15"
+        url: https://127.0.0.1:4444/Provider/Delete/"Pruebatest15"
         method: DELETE
+        verify : false
+
 
    response:
         status_code: 200

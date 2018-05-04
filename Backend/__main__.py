@@ -167,7 +167,7 @@ if __name__ == '__main__':
     """
     try:
         # On this occasion we use self-signed https certificates just like extra :V
-        app.run(debug=True, host='127.0.0.1', port=4444)
+        app.run(debug=True, host='127.0.0.1', port=4444,ssl_context=('Certificate/public.pem', 'Certificate/private.pem'))
     except IOError as e:
         # If something bad happend
         print(e)
