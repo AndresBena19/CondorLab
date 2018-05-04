@@ -1,0 +1,79 @@
+
+test_name: Make sure that the API serves correctly
+
+stages:
+
+ - name: Make sure that the user is created
+   request:
+     url: http://127.0.0.1:4444/Provider/Add
+     json:
+       "_id": "Pruebatest15"
+       "firstName": "Andres"
+       "lastName": "Felipe"
+       "middleName": "Benavides Montoya"
+       "email": "andresbenavides404@gmail.com.com"
+       "employerId": 999
+       "employerId": 999
+       "providerType": "MD"
+       "staffStatus": "CEO"
+       "assignedTo": 90086
+       "status": "READY_FOR_REVIEW"
+       "createdBy": 33108
+       "pdatedBy": 72482
+       "projectedStartDate": "2017-12-26T22:32:20.905Z"
+     method: POST
+     headers:
+       content-type: application/json
+
+
+   response:
+     status_code: 201
+     body:
+       Message: 'The user have been created'
+
+
+ - name: Make sure that the previous record was created and we can get that information
+   request:
+        url: http://127.0.0.1:4444/Provider/Update/"Pruebatest15"
+        method: GET
+   response:
+        status_code: 200
+
+
+ - name: Make sure that the user is updated
+   request:
+        url: http://127.0.0.1:4444/Provider/Update/"Pruebatest15"
+
+        json:
+          firstName: "NewAndres"
+          lastName: "NewFelipe"
+          middleName: "Benavides Montoya"
+          email: "andresbenavides404@gmail.com.com"
+
+        method: PUT
+        headers:
+          content-type: application/json
+
+   response:
+        status_code: 202
+        body:
+          Message: 'The user have been update'
+
+
+
+ - name: Make sure that the user is deleted
+   request:
+        url: http://127.0.0.1:4444/Provider/Delete/"Pruebatest15"
+        method: DELETE
+
+   response:
+        status_code: 200
+        body:
+          Message: 'The user have been deleted'
+
+
+
+
+
+
+

@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_restful import Api, Resource
+
 from Config import DBconfig
 
 import json
@@ -66,9 +67,13 @@ class CRUD(Resource):
                 # If the id is  a normal string, just loads the variable and get the record
                 Provider = [dumps(Prov) for Prov in self.db.providers.find({"_id": loads(Key)})]
             if not Provider:
-                return jsonify({'Information': 'The id ' + Key + ' dont exist on the db'})
+                Response = jsonify({'Information': 'The id ' + str(Key) + ' dont exist on the db'})
+                Response.status_code = 404
+                return Response
 
-        return list(map(json.loads, Provider))
+        Response = jsonify(list(map(json.loads, Provider)))
+        Response.status_code = 200
+        return Response
 
     def delete(self, Key):
         """
@@ -91,9 +96,13 @@ class CRUD(Resource):
 
         except bson.errors.InvalidId:
             # Id  InvalidID error is triggered, it's mean that the value sended, don't exist on the db
-            return jsonify({'Information': 'The value ' + str(self.Data) + ' dont exist on the db'})
+            Response = jsonify({'Information': 'The value ' + str(self.Data) + ' dont exist on the db'})
+            Response.status_code = 404
+            return Response
         # If all run successfully
-        return jsonify({'Message': 'The user have been deleted'})
+        Response = jsonify({'Message': 'The user have been deleted'})
+        Response.status_code = 200
+        return Response
 
     def put(self, Key):
         """
@@ -108,7 +117,6 @@ class CRUD(Resource):
             '''
             if request.path.split('/')[3] == 'ObjectId':
                 ID = {'$oid': eval(Key)}
-                print("ID", ID)
                 self.db.providers.update({"_id": loads(str(json.dumps(ID)))}, {"$set": self.Data})
             else:
                 # If the id is  a normal string, just loads the variable and update  the record
@@ -116,10 +124,14 @@ class CRUD(Resource):
 
         except bson.errors.InvalidId:
             # Id  InvalidID error is triggered, it's mean that the value sanded, don't exist on the db
-            return jsonify({'Information': 'The id ' + Key + ' dont exist on the db'})
+            Response = jsonify({'Information': 'The id ' + str(Key) + ' dont exist on the db'})
+            Response.status_code = 404
+            return Response
 
         # If all run successfully
-        return jsonify({'Message': 'The user have been update'})
+        Response = jsonify({'Message': 'The user have been update'})
+        Response.status_code = 202
+        return Response
 
     def post(self):
         """
@@ -131,10 +143,14 @@ class CRUD(Resource):
             self.db.providers.insert(self.Data)
         except pymongo.errors.DuplicateKeyError:
             # If exist some record with the same _id the exception gonna raise, and the message gonna display
-            return jsonify({'Message': 'The _id  ' + str(self.Data['_id']) + ' already exist'})
+            Response = jsonify({'Message': 'The _id  ' + str(self.Data['_id']) + ' already exist'})
+            Response.status_code = 404
+            return Response
 
         # If all run successfully
-        return jsonify({'Message': 'The user have been created'})
+        Response = jsonify({'Message': 'The user have been created'})
+        Response.status_code=201
+        return Response
 
 
 # Here we add the URL resource to the API object
@@ -151,8 +167,7 @@ if __name__ == '__main__':
     """
     try:
         # On this occasion we use self-signed https certificates just like extra :V
-        app.run(debug=True, host='127.0.0.1', port=4444,
-                ssl_context=('Certificate/public.pem', 'Certificate/private.pem'))
+        app.run(debug=True, host='127.0.0.1', port=4444)
     except IOError as e:
         # If something bad happend
         print(e)

@@ -1,0 +1,52 @@
+
+
+test_name: Make sure that the API serves correctly
+
+stages:
+
+
+  - name: Make sure that the user is updated when the Key is  ObjectID on the database
+    request:
+        url: http://127.0.0.1:4444/Provider/Update/ObjectId/"<String of the ObjectId>"
+
+        json:
+          firstName: "Andres"
+          lastName: "Felipe"
+          middleName: "Benavides Montoya"
+          email: "andresbenavides404@gmail.com.com"
+
+        method: PUT
+        headers:
+          content-type: application/json
+
+    response:
+        status_code: 202
+        body:
+          Message: 'The user have been update'
+
+
+
+  - name: Make sure that the previous record was created and we can get that information
+    request:
+        url: http://127.0.0.1:4444/Provider/ObjectId/"<String of the ObjectId>"
+        method: GET
+    response:
+        status_code: 200
+
+
+  - name: Make sure that the user is deleted when the Key is ObjectID
+    request:
+        url: http://127.0.0.1:4444/Provider/Delete/ObjectId/"<String of the ObjectId>"
+        method: DELETE
+        headers:
+          content-type: application/json
+
+    response:
+        status_code: 200
+        body:
+          Message: 'The user have been deleted'
+
+
+
+
+
