@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8484bcb4-3d18-4a66-8336-bb5c213aae68" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/FRONTEND$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1525411378905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FRONTEND$test.coverage" NAME="test Coverage Results" MODIFIED="1525397852908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Logs.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Logs.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-153">
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+              <folding>
+                <element signature="e#3#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="284" column="17" selection-start-line="284" selection-start-column="17" selection-end-line="284" selection-end-column="17" />
+              <folding>
+                <element signature="n#style#0;n#i#0;n#h5#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#h5#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#17;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="graphs.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/graphs.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="parseTable.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/parseTable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/example.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/custom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2499">
+              <caret column="5039" selection-start-column="5039" selection-end-column="5039" />
+              <caret column="6466" selection-start-column="6466" selection-end-column="6466" />
+              <caret column="6749" selection-start-column="6749" selection-end-column="6749" />
+              <caret column="7367" selection-start-column="7367" selection-end-column="7367" />
+              <caret column="9106" selection-start-column="9106" selection-end-column="9106" />
+              <caret column="9127" selection-start-column="9127" selection-end-column="9127" />
+              <caret column="15782" selection-start-column="15782" selection-end-column="15782" />
+              <caret column="15807" selection-start-column="15807" selection-end-column="15807" />
+              <caret column="15949" selection-start-column="15949" selection-end-column="15949" />
+              <caret column="15985" selection-start-column="15985" selection-end-column="15985" />
+              <caret column="17372" selection-start-column="17372" selection-end-column="17372" />
+              <caret column="17504" selection-start-column="17504" selection-end-column="17504" />
+              <caret column="20137" selection-start-column="20137" selection-end-column="20137" />
+              <caret column="20162" selection-start-column="20162" selection-end-column="20162" />
+              <caret column="24748" selection-start-column="24748" selection-end-column="24748" />
+              <caret column="24823" selection-start-column="24823" selection-end-column="24823" />
+              <caret column="24859" selection-start-column="24859" selection-end-column="24859" />
+              <caret column="25067" selection-start-column="25067" selection-end-column="25067" />
+              <caret column="26610" selection-start-column="26610" selection-end-column="26610" />
+              <caret column="26663" selection-start-column="26663" selection-end-column="26663" />
+              <caret column="26699" selection-start-column="26699" selection-end-column="26699" />
+              <caret column="26793" selection-start-column="26793" selection-end-column="26793" />
+              <caret column="26854" selection-start-column="26854" selection-end-column="26854" />
+              <caret column="26941" selection-start-column="26941" selection-end-column="26941" />
+              <caret column="34318" selection-start-column="34318" selection-end-column="34318" />
+              <caret column="34339" selection-start-column="34339" selection-end-column="34339" />
+              <caret column="37292" selection-start-column="37292" selection-end-column="37292" />
+              <caret column="37365" selection-start-column="37365" selection-end-column="37365" />
+              <caret column="37441" selection-start-column="37441" selection-end-column="37441" />
+              <caret column="38760" selection-start-column="38760" selection-end-column="38760" />
+              <caret column="39125" selection-start-column="39125" selection-end-column="39125" />
+              <caret column="39334" selection-start-column="39334" selection-end-column="39334" />
+              <caret column="40751" selection-start-column="40751" selection-end-column="40751" />
+              <caret column="49115" selection-start-column="49115" selection-end-column="49115" />
+              <caret column="49147" selection-start-column="49147" selection-end-column="49147" />
+              <caret column="52129" selection-start-column="52129" selection-end-column="52129" />
+              <caret column="52406" selection-start-column="52406" selection-end-column="52406" />
+              <caret column="55596" selection-start-column="55596" selection-end-column="55596" />
+              <caret column="59635" selection-start-column="59635" selection-end-column="59635" />
+              <caret column="65269" selection-start-column="65269" selection-end-column="65269" />
+              <caret column="65419" selection-start-column="65419" selection-end-column="65419" />
+              <caret column="67179" selection-start-column="67179" selection-end-column="67179" />
+              <caret column="68558" selection-start-column="68558" selection-end-column="68558" />
+              <caret column="68570" selection-start-column="68570" selection-end-column="68570" />
+              <caret column="68645" selection-start-column="68645" selection-end-column="68645" />
+              <caret column="68657" selection-start-column="68657" selection-end-column="68657" />
+              <caret column="68728" selection-start-column="68728" selection-end-column="68728" />
+              <caret column="68740" selection-start-column="68740" selection-end-column="68740" />
+              <caret column="72235" selection-start-column="72235" selection-end-column="72235" />
+              <caret column="76537" selection-start-column="76537" selection-end-column="76537" />
+              <caret column="76645" selection-start-column="76645" selection-end-column="76645" />
+              <caret column="76759" selection-start-column="76759" selection-end-column="76759" />
+              <caret column="76875" selection-start-column="76875" selection-end-column="76875" />
+              <caret column="76986" selection-start-column="76986" selection-end-column="76986" />
+              <caret column="78296" selection-start-column="78296" selection-end-column="78296" />
+              <caret column="78317" selection-start-column="78317" selection-end-column="78317" />
+              <caret column="78425" selection-start-column="78425" selection-end-column="78425" />
+              <caret column="80233" selection-start-column="80233" selection-end-column="80233" />
+              <caret column="80852" selection-start-column="80852" selection-end-column="80852" />
+              <caret column="81058" selection-start-column="81058" selection-end-column="81058" />
+              <caret column="81608" selection-start-column="81608" selection-end-column="81608" />
+              <caret line="3" column="51228" selection-start-line="3" selection-start-column="51228" selection-end-line="3" selection-end-column="51228" />
+              <caret line="3" column="52117" selection-start-line="3" selection-start-column="52117" selection-end-line="3" selection-end-column="52117" />
+              <caret line="3" column="52149" selection-start-line="3" selection-start-column="52149" selection-end-line="3" selection-end-column="52149" />
+              <caret line="3" column="52229" selection-start-line="3" selection-start-column="52229" selection-end-line="3" selection-end-column="52229" />
+              <caret line="3" column="58160" selection-start-line="3" selection-start-column="58160" selection-end-line="3" selection-end-column="58160" />
+              <caret line="3" column="59051" selection-start-line="3" selection-start-column="59051" selection-end-line="3" selection-end-column="59051" />
+              <caret line="3" column="59127" selection-start-line="3" selection-start-column="59127" selection-end-line="3" selection-end-column="59127" />
+              <caret line="3" column="61018" selection-start-line="3" selection-start-column="61018" selection-end-line="3" selection-end-column="61018" />
+              <caret line="3" column="61189" selection-start-line="3" selection-start-column="61189" selection-end-line="3" selection-end-column="61189" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blue-dark.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/colors/blue-dark.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="2584" selection-start-column="2584" selection-end-column="2584" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>85b4d0</find>
+      <find>8</find>
+      <find>profile</find>
+      <find>June</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/Dashboard.html" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
+        <option value="$PROJECT_DIR$/static/css/colors/blue-dark.css" />
+        <option value="$PROJECT_DIR$/static/js/Datatable.js" />
+        <option value="$PROJECT_DIR$/static/js/datatable.js" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/Logs.json" />
+        <option value="$PROJECT_DIR$/static/js/parseTable.js" />
+        <option value="$PROJECT_DIR$/static/js/example.js" />
+        <option value="$PROJECT_DIR$/static/js/graphs.js" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/static/bootstrap/package.json" />
+      <path value="$PROJECT_DIR$/static/plugins/bower_components/morrisjs/package.json" />
+      <path value="$PROJECT_DIR$/static/plugins/bower_components/sidebar-nav/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="262" />
+    <option name="y" value="98" />
+    <option name="width" value="925" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FRONTEND" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FRONTEND" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FRONTEND" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FRONTEND" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FRONTEND" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FRONTEND" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FRONTEND" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FRONTEND" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub/Store_inventory/Inventory" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Flask server.Flask (app.py)">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FRONTEND" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="FRONTEND" type="Python.FlaskServer" factoryName="Flask server">
+      <module name="FRONTEND" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+    </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" factoryName="Flask server" temporary="true" nameIsGenerated="true">
+      <module name="FRONTEND" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Flask server.FRONTEND" />
+      <item itemvalue="Flask server.Flask (app.py)" />
+      <item itemvalue="Python.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flask server.Flask (app.py)" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8484bcb4-3d18-4a66-8336-bb5c213aae68" name="Default" comment="" />
+      <created>1525284252912</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525284252912</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34770888" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32884097" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2359944" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32983193" />
+      <window_info anchor="right" id="SciView" order="3" side_tool="true" weight="0.32983193" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/templates/index.html</url>
+          <line>340</line>
+          <properties lambdaOrdinal="-1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/example.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2499">
+          <caret column="5039" selection-start-column="5039" selection-end-column="5039" />
+          <caret column="6466" selection-start-column="6466" selection-end-column="6466" />
+          <caret column="6749" selection-start-column="6749" selection-end-column="6749" />
+          <caret column="7367" selection-start-column="7367" selection-end-column="7367" />
+          <caret column="9106" selection-start-column="9106" selection-end-column="9106" />
+          <caret column="9127" selection-start-column="9127" selection-end-column="9127" />
+          <caret column="15782" selection-start-column="15782" selection-end-column="15782" />
+          <caret column="15807" selection-start-column="15807" selection-end-column="15807" />
+          <caret column="15949" selection-start-column="15949" selection-end-column="15949" />
+          <caret column="15985" selection-start-column="15985" selection-end-column="15985" />
+          <caret column="17372" selection-start-column="17372" selection-end-column="17372" />
+          <caret column="17504" selection-start-column="17504" selection-end-column="17504" />
+          <caret column="20137" selection-start-column="20137" selection-end-column="20137" />
+          <caret column="20162" selection-start-column="20162" selection-end-column="20162" />
+          <caret column="24748" selection-start-column="24748" selection-end-column="24748" />
+          <caret column="24823" selection-start-column="24823" selection-end-column="24823" />
+          <caret column="24859" selection-start-column="24859" selection-end-column="24859" />
+          <caret column="25067" selection-start-column="25067" selection-end-column="25067" />
+          <caret column="26610" selection-start-column="26610" selection-end-column="26610" />
+          <caret column="26663" selection-start-column="26663" selection-end-column="26663" />
+          <caret column="26699" selection-start-column="26699" selection-end-column="26699" />
+          <caret column="26793" selection-start-column="26793" selection-end-column="26793" />
+          <caret column="26854" selection-start-column="26854" selection-end-column="26854" />
+          <caret column="26941" selection-start-column="26941" selection-end-column="26941" />
+          <caret column="34318" selection-start-column="34318" selection-end-column="34318" />
+          <caret column="34339" selection-start-column="34339" selection-end-column="34339" />
+          <caret column="37292" selection-start-column="37292" selection-end-column="37292" />
+          <caret column="37365" selection-start-column="37365" selection-end-column="37365" />
+          <caret column="37441" selection-start-column="37441" selection-end-column="37441" />
+          <caret column="38760" selection-start-column="38760" selection-end-column="38760" />
+          <caret column="39125" selection-start-column="39125" selection-end-column="39125" />
+          <caret column="39334" selection-start-column="39334" selection-end-column="39334" />
+          <caret column="40751" selection-start-column="40751" selection-end-column="40751" />
+          <caret column="49115" selection-start-column="49115" selection-end-column="49115" />
+          <caret column="49147" selection-start-column="49147" selection-end-column="49147" />
+          <caret column="52129" selection-start-column="52129" selection-end-column="52129" />
+          <caret column="52406" selection-start-column="52406" selection-end-column="52406" />
+          <caret column="55596" selection-start-column="55596" selection-end-column="55596" />
+          <caret column="59635" selection-start-column="59635" selection-end-column="59635" />
+          <caret column="65269" selection-start-column="65269" selection-end-column="65269" />
+          <caret column="65419" selection-start-column="65419" selection-end-column="65419" />
+          <caret column="67179" selection-start-column="67179" selection-end-column="67179" />
+          <caret column="68558" selection-start-column="68558" selection-end-column="68558" />
+          <caret column="68570" selection-start-column="68570" selection-end-column="68570" />
+          <caret column="68645" selection-start-column="68645" selection-end-column="68645" />
+          <caret column="68657" selection-start-column="68657" selection-end-column="68657" />
+          <caret column="68728" selection-start-column="68728" selection-end-column="68728" />
+          <caret column="68740" selection-start-column="68740" selection-end-column="68740" />
+          <caret column="72235" selection-start-column="72235" selection-end-column="72235" />
+          <caret column="76537" selection-start-column="76537" selection-end-column="76537" />
+          <caret column="76645" selection-start-column="76645" selection-end-column="76645" />
+          <caret column="76759" selection-start-column="76759" selection-end-column="76759" />
+          <caret column="76875" selection-start-column="76875" selection-end-column="76875" />
+          <caret column="76986" selection-start-column="76986" selection-end-column="76986" />
+          <caret column="78296" selection-start-column="78296" selection-end-column="78296" />
+          <caret column="78317" selection-start-column="78317" selection-end-column="78317" />
+          <caret column="78425" selection-start-column="78425" selection-end-column="78425" />
+          <caret column="80233" selection-start-column="80233" selection-end-column="80233" />
+          <caret column="80852" selection-start-column="80852" selection-end-column="80852" />
+          <caret column="81058" selection-start-column="81058" selection-end-column="81058" />
+          <caret column="81608" selection-start-column="81608" selection-end-column="81608" />
+          <caret line="3" column="51228" selection-start-line="3" selection-start-column="51228" selection-end-line="3" selection-end-column="51228" />
+          <caret line="3" column="52117" selection-start-line="3" selection-start-column="52117" selection-end-line="3" selection-end-column="52117" />
+          <caret line="3" column="52149" selection-start-line="3" selection-start-column="52149" selection-end-line="3" selection-end-column="52149" />
+          <caret line="3" column="52229" selection-start-line="3" selection-start-column="52229" selection-end-line="3" selection-end-column="52229" />
+          <caret line="3" column="58160" selection-start-line="3" selection-start-column="58160" selection-end-line="3" selection-end-column="58160" />
+          <caret line="3" column="59051" selection-start-line="3" selection-start-column="59051" selection-end-line="3" selection-end-column="59051" />
+          <caret line="3" column="59127" selection-start-line="3" selection-start-column="59127" selection-end-line="3" selection-end-column="59127" />
+          <caret line="3" column="61018" selection-start-line="3" selection-start-column="61018" selection-end-line="3" selection-end-column="61018" />
+          <caret line="3" column="61189" selection-start-line="3" selection-start-column="61189" selection-end-line="3" selection-end-column="61189" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/colors/blue-dark.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2584" selection-start-column="2584" selection-end-column="2584" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#h5#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#h5#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#17;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Dashboard.html" />
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2499">
+          <caret column="5039" selection-start-column="5039" selection-end-column="5039" />
+          <caret column="6466" selection-start-column="6466" selection-end-column="6466" />
+          <caret column="6749" selection-start-column="6749" selection-end-column="6749" />
+          <caret column="7367" selection-start-column="7367" selection-end-column="7367" />
+          <caret column="9106" selection-start-column="9106" selection-end-column="9106" />
+          <caret column="9127" selection-start-column="9127" selection-end-column="9127" />
+          <caret column="15782" selection-start-column="15782" selection-end-column="15782" />
+          <caret column="15807" selection-start-column="15807" selection-end-column="15807" />
+          <caret column="15949" selection-start-column="15949" selection-end-column="15949" />
+          <caret column="15985" selection-start-column="15985" selection-end-column="15985" />
+          <caret column="17372" selection-start-column="17372" selection-end-column="17372" />
+          <caret column="17504" selection-start-column="17504" selection-end-column="17504" />
+          <caret column="20137" selection-start-column="20137" selection-end-column="20137" />
+          <caret column="20162" selection-start-column="20162" selection-end-column="20162" />
+          <caret column="24748" selection-start-column="24748" selection-end-column="24748" />
+          <caret column="24823" selection-start-column="24823" selection-end-column="24823" />
+          <caret column="24859" selection-start-column="24859" selection-end-column="24859" />
+          <caret column="25067" selection-start-column="25067" selection-end-column="25067" />
+          <caret column="26610" selection-start-column="26610" selection-end-column="26610" />
+          <caret column="26663" selection-start-column="26663" selection-end-column="26663" />
+          <caret column="26699" selection-start-column="26699" selection-end-column="26699" />
+          <caret column="26793" selection-start-column="26793" selection-end-column="26793" />
+          <caret column="26854" selection-start-column="26854" selection-end-column="26854" />
+          <caret column="26941" selection-start-column="26941" selection-end-column="26941" />
+          <caret column="34318" selection-start-column="34318" selection-end-column="34318" />
+          <caret column="34339" selection-start-column="34339" selection-end-column="34339" />
+          <caret column="37292" selection-start-column="37292" selection-end-column="37292" />
+          <caret column="37365" selection-start-column="37365" selection-end-column="37365" />
+          <caret column="37441" selection-start-column="37441" selection-end-column="37441" />
+          <caret column="38760" selection-start-column="38760" selection-end-column="38760" />
+          <caret column="39125" selection-start-column="39125" selection-end-column="39125" />
+          <caret column="39334" selection-start-column="39334" selection-end-column="39334" />
+          <caret column="40751" selection-start-column="40751" selection-end-column="40751" />
+          <caret column="49115" selection-start-column="49115" selection-end-column="49115" />
+          <caret column="49147" selection-start-column="49147" selection-end-column="49147" />
+          <caret column="52129" selection-start-column="52129" selection-end-column="52129" />
+          <caret column="52406" selection-start-column="52406" selection-end-column="52406" />
+          <caret column="55596" selection-start-column="55596" selection-end-column="55596" />
+          <caret column="59635" selection-start-column="59635" selection-end-column="59635" />
+          <caret column="65269" selection-start-column="65269" selection-end-column="65269" />
+          <caret column="65419" selection-start-column="65419" selection-end-column="65419" />
+          <caret column="67179" selection-start-column="67179" selection-end-column="67179" />
+          <caret column="68558" selection-start-column="68558" selection-end-column="68558" />
+          <caret column="68570" selection-start-column="68570" selection-end-column="68570" />
+          <caret column="68645" selection-start-column="68645" selection-end-column="68645" />
+          <caret column="68657" selection-start-column="68657" selection-end-column="68657" />
+          <caret column="68728" selection-start-column="68728" selection-end-column="68728" />
+          <caret column="68740" selection-start-column="68740" selection-end-column="68740" />
+          <caret column="72235" selection-start-column="72235" selection-end-column="72235" />
+          <caret column="76537" selection-start-column="76537" selection-end-column="76537" />
+          <caret column="76645" selection-start-column="76645" selection-end-column="76645" />
+          <caret column="76759" selection-start-column="76759" selection-end-column="76759" />
+          <caret column="76875" selection-start-column="76875" selection-end-column="76875" />
+          <caret column="76986" selection-start-column="76986" selection-end-column="76986" />
+          <caret column="78296" selection-start-column="78296" selection-end-column="78296" />
+          <caret column="78317" selection-start-column="78317" selection-end-column="78317" />
+          <caret column="78425" selection-start-column="78425" selection-end-column="78425" />
+          <caret column="80233" selection-start-column="80233" selection-end-column="80233" />
+          <caret column="80852" selection-start-column="80852" selection-end-column="80852" />
+          <caret column="81058" selection-start-column="81058" selection-end-column="81058" />
+          <caret column="81608" selection-start-column="81608" selection-end-column="81608" />
+          <caret line="3" column="51228" selection-start-line="3" selection-start-column="51228" selection-end-line="3" selection-end-column="51228" />
+          <caret line="3" column="52117" selection-start-line="3" selection-start-column="52117" selection-end-line="3" selection-end-column="52117" />
+          <caret line="3" column="52149" selection-start-line="3" selection-start-column="52149" selection-end-line="3" selection-end-column="52149" />
+          <caret line="3" column="52229" selection-start-line="3" selection-start-column="52229" selection-end-line="3" selection-end-column="52229" />
+          <caret line="3" column="58160" selection-start-line="3" selection-start-column="58160" selection-end-line="3" selection-end-column="58160" />
+          <caret line="3" column="59051" selection-start-line="3" selection-start-column="59051" selection-end-line="3" selection-end-column="59051" />
+          <caret line="3" column="59127" selection-start-line="3" selection-start-column="59127" selection-end-line="3" selection-end-column="59127" />
+          <caret line="3" column="61018" selection-start-line="3" selection-start-column="61018" selection-end-line="3" selection-end-column="61018" />
+          <caret line="3" column="61189" selection-start-line="3" selection-start-column="61189" selection-end-line="3" selection-end-column="61189" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/dashboard1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/colors/blue-dark.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2584" selection-start-column="2584" selection-end-column="2584" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/datatable.js" />
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/example.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/parseTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/graphs.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+          <folding>
+            <element signature="e#3#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="284" column="17" selection-start-line="284" selection-start-column="17" selection-end-line="284" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#h5#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#h5#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#17;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
