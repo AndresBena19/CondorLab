@@ -16,7 +16,7 @@ C:\user> pip install tavern
 # Routes #
 
 
- > ####  GET ####
+ ####  GET ####
     * [Server]/Provider
           This gonna return all the record from the database
 
@@ -27,7 +27,7 @@ C:\user> pip install tavern
           This gonna return just the record with the key(_id) signaled
 	      but the _id on the database have to be a ObjectId
 
- > ####  PUT ####
+ ####  PUT ####
     * [Server]/Provider/Update/ObjectId/<key>
     
          This route gonna update  the record with the key(_id) signaled but 
@@ -37,7 +37,7 @@ C:\user> pip install tavern
     
          This gonna update  the record  with the key(_id) signaled
     
-> #### DELETE ####
+ #### DELETE ####
        *[Server]/Provider/Delete/<Key>
         
              This route gonna delete the record with the key(_id) signaled
@@ -47,7 +47,7 @@ C:\user> pip install tavern
             This route gonna delete the record with the key(_id) signaled, but this 
             _id have to be ObjectID on the database
             
-> #### POST ####
+#### POST ####
         *[Server]/Provider/Add
         
             This route gonna create a nuew record on the database
