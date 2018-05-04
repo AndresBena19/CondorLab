@@ -70,7 +70,8 @@ class CRUD(Resource):
                 Response = jsonify({'Information': 'The id ' + str(Key) + ' dont exist on the db'})
                 Response.status_code = 404
                 return Response
-
+            
+        #Parsing and turning the cursor object to readable json
         Response = jsonify(list(map(json.loads, Provider)))
         Response.status_code = 200
         return Response
