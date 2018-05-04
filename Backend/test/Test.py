@@ -4,13 +4,13 @@ Test_1 = run("Test.tavern.yaml", {})
 Test_2 = True
 
 '''
-For this test just change  the field "<String of the ObjectId>" from Test_ObjectId.tavern.yaml for the string 
-of the ObjectId on the database.
+For this test just change  the field "<String of the ObjectId>" on Test_ObjectId.tavern.yaml
+for the string  of the ObjectId on the database.
 
-this, because this is a random string, before insert the key in the place, you cant verify that the 
+this, because the objectId contain a ramdon string, after this you cant verify that the 
 record, can be returned, modified and finally deleted
 
-Notes: The InsecureRequestWarning  exception is rease, because we are using self_signed certificates
+Notes: The InsecureRequestWarning  exception gonna be reased, because we are using self_signed certificates
 
 ->>>For the test just enable the path
 '''
