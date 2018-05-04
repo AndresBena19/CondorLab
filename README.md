@@ -52,8 +52,14 @@ C:\user> pip install tavern
         
             This route gonna create a nuew record on the database
             
-            
-# Exception manage
+           
+# Test #
+	 
+```sh
+C:\user> python test/test.py
+```
+
+# Exception manage #
 
    + When the dont exist on the database
    + When the _id already exist
