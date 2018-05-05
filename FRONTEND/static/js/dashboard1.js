@@ -1,5 +1,7 @@
+
+/*
 Morris.Area({
-    element: 'morris-area-chart2',
+
     data: [{
         period: '2010',
         SiteA: 0,
@@ -56,3 +58,4 @@ $(".counter").counterUp({
     delay: 100,
     time: 1200
 });
+*/
