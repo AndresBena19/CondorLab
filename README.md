@@ -2,7 +2,7 @@
 
 
  
-## BACKEND TEST ##
+
 
 ## requirements ##
 
@@ -11,7 +11,13 @@
 C:\user> pip install flask
 C:\user> pip install pymongo
 C:\user> pip install tavern
+C:\user> pip install requests
+
 ```
+
+
+## BACKEND TEST ##
+
 
 # Routes #
 
@@ -68,6 +74,30 @@ C:\user> python test/test.py
 # Notes #
 
 + The Api use a self-signed certificate just be sure to use https at the begin of the URI
+
+
+
+## FRONTEND TEST ##
+
+
+just execute 
+
+```sh
+C:\user> python app.py
+```
+
+And visit in your browser http://127.0.0.1:4444
+
+
+
+## DATABASE TEST ##
+
+The test was done with mysql
+
++ first execute the sql file name CreateModel.sql, this gonna create the model an insert some records
+
++ second execute the other files name, 1erReport, second, and third.
+
 
 
 
