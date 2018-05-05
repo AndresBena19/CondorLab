@@ -22,11 +22,6 @@ def Transactions():
 
     Today = datetime.date.today()
     Currentday = str(Today.month) + '/' + str(Today.isoweekday()) + '/' + str(Today.year)
-
-    '''
-    Another reason is that  filter data range does not work as I expected
-    
-    '''
     Payload = requests.get('https://api.cebroker.com/v1/cerenewaltransactions/GetLogsRecordData?enddate=' + Currentday)
     # Here we sort the list of records by date start log
     Ordered = sorted(Payload.json()[:3000], key=lambda k: dateutil.parser.parse(k['dt_Start_Log']))
