@@ -56,7 +56,7 @@ C:\user> pip install requests
 #### POST ####
         *https://[Server]/Provider/Add
         
-            This route gonna create a nuew record on the database
+            This route gonna create a new record on the database
             
            
 # Test #
