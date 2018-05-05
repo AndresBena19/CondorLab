@@ -279,6 +279,7 @@
 <!-- This function  get the actual basic informaton diplayed on the 20 record -->
     <script>
         function BasicInfo() {
+
             var table = document.getElementById("example");
             var data = parseTable(table);
 
@@ -328,7 +329,6 @@
             }
             ;
 
-
             var Total_per_time = document.getElementById("T_P_T");
 
             var a = NumDays;
@@ -337,7 +337,7 @@
             }, 0);
 
 
-            Total_per_time.innerHTML = parseFloat(sum).toFixed(1);
+            Total_per_time.innerHTML = parseFloat(sum/Object.keys(Days).length).toFixed(1);
 
             delete Machine["undefined"];
             delete Status["undefined"];
@@ -523,8 +523,8 @@
         $(document).ready(function() {
         $('#example').DataTable( {
             "lengthChange": false,
-
             "pageLength": 20,
+
             initComplete: function () {
                 this.api().columns().every( function () {
                     var column = this;
@@ -552,6 +552,7 @@
             /* Here we listen the event triggered by the table, to update the graphs */
                  table.on( 'draw', function () {
 
+
                      while(removeData(myChartLine)){}
                      while(removeData(myChartBar)){}
                      while(removeData(myChartBar2)){}
@@ -560,21 +561,19 @@
                      Data = BasicInfo();
 
 
-
                     var Days = Data[0];
                     var NumDays = Data[1];
                     var Machine = Data[2];
                     var ShortDates = Data[3];
                     var Status = Data[4];
 
-                    addData(myChartLine,ShortDates.sort(), Object.values(Days))
-                     addData(myChartBar,Object.keys(Status), Object.values(Status))
-                     addData(myChartBar2,Object.keys(Machine), Object.values(Machine))
-
-
+                    addData(myChartLine,ShortDates.sort(), Object.values(Days));
+                     addData(myChartBar,Object.keys(Status), Object.values(Status));
+                     addData(myChartBar2,Object.keys(Machine), Object.values(Machine));
 
 
     } );
+
 
     
     } );

@@ -9,20 +9,32 @@ import requests
 app = Flask(__name__)
 
 
+
 @app.route('/', methods=['GET'])
 def Transactions():
+
+
+    '''
+    for practical uses the amount of date passes to the view, gonna be less that real  
+    this because the web browser dont support and exploit
+
+    '''
 
     Today = datetime.date.today()
     Currentday = str(Today.month) + '/' + str(Today.isoweekday()) + '/' + str(Today.year)
 
+    '''
+    Another reason is that  filter data range does not work as I expected
+    
+    '''
+    #Payload = requests.get('https://api.cebroker.com/v1/cerenewaltransactions/GetLogsRecordData?enddate=' + Currentday)
 
-    '''
-    for practical uses the request just gonna ser with the FL state parameter and the actual date, that because the web 
-    explooit, and sthe filter data range does not work as I expectec
-    '''
-    Payload = requests.get('https://api.cebroker.com/v1/cerenewaltransactions/GetLogsRecordData?enddate=' + Currentday + '&state=FL' )
+    Payload = requests.get('https://api.cebroker.com/v1/cerenewaltransactions/GetLogsRecordData?state=FL')
+
     # Here we sort the list of records by date start log
-    Ordered = sorted(Payload.json(), key=lambda k: dateutil.parser.parse(k['dt_Start_Log']))
+    Ordered = sorted(Payload.json()[:3000], key=lambda k: dateutil.parser.parse(k['dt_Start_Log']))
+
+    print(Ordered)
     return render_template('index.html', Logs=Ordered)
 
 
