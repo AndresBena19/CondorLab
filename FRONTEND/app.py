@@ -12,13 +12,11 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def Transactions():
+    """
+    for practical uses the amount of date passed to the view is going to be less than the real,
+    because the web browser doesn't support it then exploit.
 
-
-    '''
-    for practical uses the amount of date passes to the view, gonna be less that real  
-    this because the web browser dont support and exploit
-
-    '''
+    """
 
     Today = datetime.date.today()
     Currentday = str(Today.month) + '/' + str(Today.isoweekday()) + '/' + str(Today.year)
