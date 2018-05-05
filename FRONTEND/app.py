@@ -27,10 +27,7 @@ def Transactions():
     Another reason is that  filter data range does not work as I expected
     
     '''
-    #Payload = requests.get('https://api.cebroker.com/v1/cerenewaltransactions/GetLogsRecordData?enddate=' + Currentday)
-
-    Payload = requests.get('https://api.cebroker.com/v1/cerenewaltransactions/GetLogsRecordData?state=FL')
-
+    Payload = requests.get('https://api.cebroker.com/v1/cerenewaltransactions/GetLogsRecordData?enddate=' + Currentday)
     # Here we sort the list of records by date start log
     Ordered = sorted(Payload.json()[:3000], key=lambda k: dateutil.parser.parse(k['dt_Start_Log']))
 
