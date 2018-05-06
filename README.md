@@ -67,8 +67,9 @@ C:\user> python test/test.py
 
 # Exception manage #
 
-   + When the dont exist on the database
+   + When the record dont exist on the database
    + When the _id already exist
+   + when is trying  to create a record that already exist, according with the id
    + When a invalid id is sended to remove some record
     
 # Notes #
