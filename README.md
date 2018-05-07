@@ -20,7 +20,7 @@ C:\user> pip install requests
 
 Before running the backend test enter the connetion string on Config.py file:
 
-+ mongodb://<DBUSER>:(DBPASSWORD)@ds125146.mlab.com:25146/foundation-test1
++ mongodb://(DBUSER):(DBPASSWORD)@ds125146.mlab.com:25146/foundation-test1
 
 # Routes #
 
