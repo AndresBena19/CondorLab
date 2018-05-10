@@ -17,14 +17,23 @@ def Transactions():
     because the web browser doesn't support it then exploit.
 
     """
-
     Today = datetime.date.today()
-    Currentday = str(Today.month) + '/' + str(Today.isoweekday()) + '/' + str(Today.year)
-    Payload = requests.get('https://api.cebroker.com/v1/cerenewaltransactions/GetLogsRecordData?enddate=' + Currentday)
+    Currentday =datetime.datetime.now().strftime("%m/%d/")+str(Today.year)
+
+    """
+       This is done for fast respond os the application
+    """
+    Payload = requests.get('https://api.cebroker.com/v1/cerenewaltransactions/GetLogsRecordData?enddate=' + str(Currentday) + '&state=FL')
+
+    """
+    If you want to retrieve all the record just uncomment next line, and comment the previous
+    """
+    #Payload = requests.get('https://api.cebroker.com/v1/cerenewaltransactions/GetLogsRecordData?enddate=' + str(Currentday))
+
+
     # Here we sort the list of records by date start log
     Ordered = sorted(Payload.json()[:3000], key=lambda k: dateutil.parser.parse(k['dt_Start_Log']))
 
-    print(Ordered)
     return render_template('index.html', Logs=Ordered)
 
 
