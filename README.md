@@ -10,6 +10,7 @@ Please run in a virtual env.
  
 ```sh
 (env)C:\user\CondorLab-master>pip install -r requirements.txt
+(env)C:\user\CondorLab-master\Backend>python _main_.py
 ```
 
 
@@ -63,8 +64,6 @@ And visit in your browser https://127.0.0.1:5555
             This route gonna create a new record on the database
             
 
-
-finally visit 
 # Test #
 
 	 
@@ -93,7 +92,7 @@ C:\user> python test/test.py
 just execute 
 
 ```sh
-C:\user> python app.py
+(env)C:\user\CondorLab-master\FRONTEND>python app.py
 ```
 
 And visit in your browser http://127.0.0.1:4444
