@@ -70,7 +70,7 @@ class CRUD(Resource):
                 Response = jsonify({'Information': 'The id ' + str(Key) + ' dont exist on the db'})
                 Response.status_code = 404
                 return Response
-            
+
         #Parsing and turning the cursor object to readable json
         Response = jsonify(list(map(json.loads, Provider)))
         Response.status_code = 200
@@ -164,11 +164,11 @@ api.add_resource(CRUD, '/Provider',
 if __name__ == '__main__':
     """
     Here we just run the instance app with the run method, indicating, what addrees and port
-    
+
     """
     try:
         # On this occasion we use self-signed https certificates just like extra :V
-        app.run(debug=True, host='127.0.0.1', port=5555,ssl_context=('Certificate/public.pem', 'Certificate/private.pem'))
+        app.run(host='127.0.0.1', port=5555,ssl_context=('Certificate/public.pem', 'Certificate/private.pem'))
     except IOError as e:
         # If something bad happend
         print(e)
