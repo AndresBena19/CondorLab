@@ -21,7 +21,7 @@ Before running the backend test enter the connetion string on Config.py file:
 + mongodb://(DBUSER):(DBPASSWORD)@ds125146.mlab.com:25146/foundation-test1
 
 
-Use postman or other application : https://127.0.0.1:5555
+Use postman or other application : https://127.0.0.1:5555/Provider
 
 # Routes #
 
