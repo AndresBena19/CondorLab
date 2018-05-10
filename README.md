@@ -6,9 +6,11 @@
 
 ## requirements ##
 
-Please run in a virtual env.
+Please run in a virtual env, download the repository and
  
 ```sh
+ C:\user\CondorLab-master>virtualenv env
+ C:\user\CondorLab-master\env\Scripts>Activate
 (env)C:\user\CondorLab-master>pip install -r requirements.txt
 (env)C:\user\CondorLab-master\Backend>python __main__.py
 ```
