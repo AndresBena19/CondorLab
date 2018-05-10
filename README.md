@@ -9,9 +9,11 @@
 	 
 ```sh
 C:\user> pip install flask
+C:\user> pip install flask_restful
 C:\user> pip install pymongo
 C:\user> pip install tavern
 C:\user> pip install requests
+C:\user> pip install python-dateutil
 
 ```
 
@@ -21,6 +23,10 @@ C:\user> pip install requests
 Before running the backend test enter the connetion string on Config.py file:
 
 + mongodb://(DBUSER):(DBPASSWORD)@ds125146.mlab.com:25146/foundation-test1
+
+
+
+And visit in your browser https://127.0.0.1:5555
 
 # Routes #
 
@@ -61,7 +67,9 @@ Before running the backend test enter the connetion string on Config.py file:
         
             This route gonna create a new record on the database
             
-           
+
+
+finally visit 
 # Test #
 	 
 ```sh
