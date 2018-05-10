@@ -6,7 +6,10 @@
 
 ## requirements ##
 
-Please run in a virtual env, download the repository and
+Please run in a virtual environment, and be sure to use python 3.6
+
+
+download the repository and
  
 ```sh
  C:\user\CondorLab-master>virtualenv env
