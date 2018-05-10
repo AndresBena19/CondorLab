@@ -7,6 +7,7 @@ import json
 import pymongo
 import bson.errors
 from bson.json_util import dumps, loads
+import os
 
 # instantiate the app with flask constructor
 app = Flask(__name__)
@@ -166,9 +167,17 @@ if __name__ == '__main__':
     Here we just run the instance app with the run method, indicating, what addrees and port
 
     """
+
+    path = (os.path.abspath(__file__)).split('\\')
+    del path[-1]
+
+    public = '\\'.join(path) + '\\Certificate\\public.pem'
+    private = '\\'.join(path) + '\\Certificate\\private.pem'
+
+
     try:
         # On this occasion we use self-signed https certificates just like extra :V
-        app.run(host='127.0.0.1', port=5555,ssl_context=('Certificate/public.pem', 'Certificate/private.pem'))
+        app.run(host='127.0.0.1', port=5555,ssl_context=(public,private))
     except IOError as e:
         # If something bad happend
         print(e)
