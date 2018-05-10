@@ -10,7 +10,7 @@ Please run in a virtual env.
  
 ```sh
 (env)C:\user\CondorLab-master>pip install -r requirements.txt
-(env)C:\user\CondorLab-master\Backend>python _main_.py
+(env)C:\user\CondorLab-master\Backend>python __main__.py
 ```
 
 
@@ -81,7 +81,6 @@ And visit in your browser https://127.0.0.1:5555
 # Notes #
 
 + The Api use a self-signed certificate just be sure to use https at the begin of the URI
-
 
 
 # FRONTEND TEST #
