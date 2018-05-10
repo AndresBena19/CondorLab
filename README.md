@@ -68,9 +68,7 @@ And visit in your browser https://127.0.0.1:5555
 
 	 
 ```sh
-C:\user>pip install --upgrade setuptools
-C:\user> pip install tavern
-C:\user> python test/test.py
+(env)C:\user\CondorLab-master\test> python Test.py
 ```
 
 # Exception manage #
