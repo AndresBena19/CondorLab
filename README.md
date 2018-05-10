@@ -6,15 +6,10 @@
 
 ## requirements ##
 
-	 
+Please run in a virtual env.
+ 
 ```sh
-C:\user> pip install flask
-C:\user> pip install flask_restful
-C:\user> pip install pymongo
-C:\user> pip install tavern
-C:\user> pip install requests
-C:\user> pip install python-dateutil
-
+(env)C:\user\CondorLab-master>pip install -r requirements.txt
 ```
 
 
@@ -71,8 +66,11 @@ And visit in your browser https://127.0.0.1:5555
 
 finally visit 
 # Test #
+
 	 
 ```sh
+C:\user>pip install --upgrade setuptools
+C:\user> pip install tavern
 C:\user> python test/test.py
 ```
 
